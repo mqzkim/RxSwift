@@ -47,9 +47,9 @@ let package = Package(
       .library(name: "RxSwift", targets: ["RxSwift"]),
       .library(name: "RxCocoa", targets: ["RxCocoa"]),
       .library(name: "RxRelay", targets: ["RxRelay"]),
-      .library(name: "RxBlocking", type: .static, targets: ["RxBlocking"]),
-      .library(name: "RxTest", type: .static, targets: ["RxTest"]),
-      .library(name: "RxCocoaRuntime", type: .static, targets: ["RxCocoaRuntime"]),
+      .library(name: "RxBlocking", targets: ["RxBlocking"]),
+      .library(name: "RxTest", targets: ["RxTest"]),
+      .library(name: "RxCocoaRuntime", targets: ["RxCocoaRuntime"]),
     ],
     Product.allTests()
   ] as [[Product]]).flatMap { $0 },
